@@ -1,6 +1,10 @@
 # FindYourCell.jl
 Cell Segementation and Tracking
 
+We search and filter local maximal in blurred image as seed, then apply 
+watershed
+algorithm to split individual cell. Nucleus is extracted by Otsu-threshold
+in each split region.
 
 ## Data Structure
 cell_info=[x, y, threshold, cell_size, cell_intensity]
